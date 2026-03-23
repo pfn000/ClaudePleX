@@ -1,0 +1,29 @@
+# ═══════════════════════════════════════════════════════════
+#  ClaudePleX — .env Configuration
+#  Copy this file to .env and fill in your values
+# ═══════════════════════════════════════════════════════════
+
+# ── Discord ──────────────────────────────────────────────────────────────────
+# Your bot token from https://discord.com/developers/applications
+DISCORD_TOKEN=your_discord_bot_token_here
+
+# Application ID (already known)
+# DISCORD_APP_ID=1485711945888960512
+
+# Channel ID where auto-backup reports are posted (optional)
+# Right-click a channel → Copy Channel ID (needs Developer Mode on)
+BACKUP_CHANNEL_ID=0
+
+# ── Claude AI ────────────────────────────────────────────────────────────────
+# From https://console.anthropic.com/
+ANTHROPIC_API_KEY=your_anthropic_api_key_here
+
+# ── Google Drive (Sentient Backup System) ────────────────────────────────────
+#
+# Option 1: Path to your service account JSON key file
+# Create at: https://console.cloud.google.com/
+# → APIs & Services → Credentials → Service Account → Create Key (JSON)
+GOOGLE_SERVICE_ACCOUNT_FILE=./service_account.json
+
+# Option 2: Paste the entire JSON content as a single line (for Railway/Heroku/etc.)
+# GOOGLE_SERVICE_ACCOUNT_JSON={"type":"service_account","project_id":"..."}
